@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pydantic = {extras = ["dotenv"], version = "*"}  # required by environment.py
+typer = "*"
+pyyaml = "*"
+
+[dev-packages]
+black = "*"
+coverage = "*"
+build = "*"
+bump2version = "*"
+flake8 = "*"
+flake8-bugbear = "*"
+ipython = "*"
+isort = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+#pytest-freezegun = "*"  # time freezer
+scriv = "*"
+#sphinx = "*"
+#sphinx-rtd-theme = "*"
+
+[requires]
+python_version = "3.10"
